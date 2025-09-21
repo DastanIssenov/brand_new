@@ -57,21 +57,21 @@ model_name = st.sidebar.text_input(
 )
 
 # Paths for sentiment / language / class / ban
-INDEX_PATH_TEMP = st.sidebar.text_input("Index path (TEMP)", value="/Users/dastanissenov/Desktop/datathon/classify/index_temp.faiss")
-METADATA_PATH_TEMP = st.sidebar.text_input("Metadata path (TEMP)", value="/Users/dastanissenov/Desktop/datathon/classify/metadata_temp.pkl")
+INDEX_PATH_TEMP = st.sidebar.text_input("Index path (TEMP)", value="index_temp.faiss")
+METADATA_PATH_TEMP = st.sidebar.text_input("Metadata path (TEMP)", value="metadata_temp.pkl")
 
-INDEX_PATH_BAN = st.sidebar.text_input("Index path (BAN)", value="/Users/dastanissenov/Desktop/datathon/classify/index_ban.faiss")
-METADATA_PATH_BAN = st.sidebar.text_input("Metadata path (BAN)", value="/Users/dastanissenov/Desktop/datathon/classify/metadata_ban.pkl")
+INDEX_PATH_BAN = st.sidebar.text_input("Index path (BAN)", value="index_ban.faiss")
+METADATA_PATH_BAN = st.sidebar.text_input("Metadata path (BAN)", value="metadata_ban.pkl")
 
-INDEX_PATH_CLAS = st.sidebar.text_input("Index path (CLAS)", value="/Users/dastanissenov/Desktop/datathon/classify/index_clas.faiss")
-METADATA_PATH_CLAS = st.sidebar.text_input("Metadata path (CLAS)", value="/Users/dastanissenov/Desktop/datathon/classify/metadata_clas.pkl")
+INDEX_PATH_CLAS = st.sidebar.text_input("Index path (CLAS)", value="index_clas.faiss")
+METADATA_PATH_CLAS = st.sidebar.text_input("Metadata path (CLAS)", value="metadata_clas.pkl")
 
-INDEX_PATH_LANG = st.sidebar.text_input("Index path (LANG)", value="/Users/dastanissenov/Desktop/datathon/classify/index_lang.faiss")
-METADATA_PATH_LANG = st.sidebar.text_input("Metadata path (LANG)", value="/Users/dastanissenov/Desktop/datathon/classify/metadata_lang.pkl")
+INDEX_PATH_LANG = st.sidebar.text_input("Index path (LANG)", value="index_lang.faiss")
+METADATA_PATH_LANG = st.sidebar.text_input("Metadata path (LANG)", value="metadata_lang.pkl")
 
 # Q/A embeddings
-INDEX_PATH_Q = st.sidebar.text_input("Index path (Q)", value="/Users/dastanissenov/Desktop/datathon/embedded/index.faiss")
-METADATA_PATH_A = st.sidebar.text_input("Metadata path (A)", value="/Users/dastanissenov/Desktop/datathon/embedded/metadata_a.pkl")
+INDEX_PATH_Q = st.sidebar.text_input("Index path (Q)", value="index.faiss")
+METADATA_PATH_A = st.sidebar.text_input("Metadata path (A)", value="metadata_a.pkl")
 
 # Optional Instagram (Selenium) toggle
 enable_instagram = st.sidebar.toggle("Enable experimental Instagram scraping (requires local Selenium/ChromeDriver)", value=False)
