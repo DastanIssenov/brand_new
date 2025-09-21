@@ -22,8 +22,8 @@ st.caption("Paste a YouTube (or optional Instagram) link, classify + answer, and
 # ----------------------------
 # Secrets / Environment
 # ----------------------------
-OPENAI_API_KEY = st.secrets.get("OPENAI_API_KEY", os.getenv("OPENAI_API_KEY", ""))
-GOOGLE_API_KEY = st.secrets.get("GOOGLE_API_KEY", os.getenv("GOOGLE_API_KEY", ""))
+OPENAI_API_KEY = "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"
+GOOGLE_API_KEY = "AIzaSyA61tZZ4jWe35CYdkty-SESm_HMOqvJ1BY"
 
 if not OPENAI_API_KEY:
     st.warning("Add your OpenAI key to `Secrets` as `OPENAI_API_KEY` (or set the env var).")
@@ -98,7 +98,7 @@ def get_video_id(url: str) -> str:
 def build_openai_headers():
     return {
         "Content-Type": "application/json",
-        "Authorization": f"Bearer {OPENAI_API_KEY}",
+        "Authorization": f"Bearer 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",
     }
 
 def openai_chat(model: str, system_prompt: str, user_prompt: str) -> str:
